@@ -1,0 +1,597 @@
+[
+ {
+  "doc": "README.md",
+  "key": "cbi_rows_parsed",
+  "value": "11,195"
+ },
+ {
+  "doc": "README.md",
+  "key": "control_totals_exact",
+  "value": "11"
+ },
+ {
+  "doc": "README.md",
+  "key": "control_totals_checked",
+  "value": "12"
+ },
+ {
+  "doc": "README.md",
+  "key": "control_total_abs_variance",
+  "value": "1"
+ },
+ {
+  "doc": "README.md",
+  "key": "gleif.level1_rows_scanned",
+  "value": "3,488,216"
+ },
+ {
+  "doc": "README.md",
+  "key": "gleif.ie_fund_leis",
+  "value": "14,637"
+ },
+ {
+  "doc": "README.md",
+  "key": "match.accepted",
+  "value": "9,956"
+ },
+ {
+  "doc": "README.md",
+  "key": "match.funds",
+  "value": "11,190"
+ },
+ {
+  "doc": "README.md",
+  "key": "match.accepted_pct",
+  "value": "89.0%"
+ },
+ {
+  "doc": "README.md",
+  "key": "review.EXACT_ALL.correct",
+  "value": "60"
+ },
+ {
+  "doc": "README.md",
+  "key": "review.EXACT_ALL.n",
+  "value": "60"
+ },
+ {
+  "doc": "README.md",
+  "key": "review.EXACT_ALL.error_rate_95_upper_pct",
+  "value": "5.0%"
+ },
+ {
+  "doc": "README.md",
+  "key": "review.FUZZY_ACCEPTED.precision_strict_pct",
+  "value": "86.7%"
+ },
+ {
+  "doc": "README.md",
+  "key": "review.FUZZY_ACCEPTED.precision_lenient_pct",
+  "value": "96.7%"
+ },
+ {
+  "doc": "README.md",
+  "key": "review.FUZZY_ACCEPTED.n",
+  "value": "30"
+ },
+ {
+  "doc": "README.md",
+  "key": "exceptions.total",
+  "value": "6,312"
+ },
+ {
+  "doc": "README.md",
+  "key": "exceptions.funds_with_exception",
+  "value": "4,719"
+ },
+ {
+  "doc": "README.md",
+  "key": "exceptions.by_severity.HIGH",
+  "value": "109"
+ },
+ {
+  "doc": "README.md",
+  "key": "exceptions.by_rule.E01.n",
+  "value": "845"
+ },
+ {
+  "doc": "README.md",
+  "key": "exceptions.matched_lapsed_pct",
+  "value": "8.5%"
+ },
+ {
+  "doc": "README.md",
+  "key": "manager_check.agree_pct",
+  "value": "92.9%"
+ },
+ {
+  "doc": "README.md",
+  "key": "manager_check.pairs_checked",
+  "value": "8,466"
+ },
+ {
+  "doc": "README.md",
+  "key": "exceptions.by_rule",
+  "value": "18"
+ },
+ {
+  "doc": "README.md",
+  "key": "table.match_by_register",
+  "value": "table"
+ },
+ {
+  "doc": "README.md",
+  "key": "match.unmatched",
+  "value": "1,211"
+ },
+ {
+  "doc": "README.md",
+  "key": "match.unmatched_subfunds_with_matched_umbrella",
+  "value": "692"
+ },
+ {
+  "doc": "README.md",
+  "key": "match.unmatched_subfunds_with_matched_umbrella_pct",
+  "value": "57.1%"
+ },
+ {
+  "doc": "README.md",
+  "key": "table.exceptions",
+  "value": "table"
+ },
+ {
+  "doc": "README.md",
+  "key": "relationships.with_manager_rel_pct",
+  "value": "87.3%"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.portfolios",
+  "value": "9,904"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.ucits_portfolios",
+  "value": "6,350"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.ucits_portfolio_pct",
+  "value": "64.1%"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.aif_portfolios",
+  "value": "3,554"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.umbrella_share_of_top_level_pct",
+  "value": "82.5%"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.subfunds_per_umbrella_median",
+  "value": "2.0"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.subfunds_per_umbrella_mean",
+  "value": "7.5"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.subfunds_per_umbrella_max",
+  "value": "229"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.largest_umbrella",
+  "value": "FAM Series UCITS ICAV"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.ucits_top10_share_pct",
+  "value": "50.1%"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.ucits_hhi",
+  "value": "385"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.aif_top10_share_pct",
+  "value": "50.5%"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.aif_hhi",
+  "value": "371"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.aif_top_manager",
+  "value": "Carne Global Fund Managers (Ireland) Limited"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.aif_top_manager_share_pct",
+  "value": "11.6%"
+ },
+ {
+  "doc": "README.md",
+  "key": "market.portfolios_authorised_since_2020_pct",
+  "value": "49.7%"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "as_of",
+  "value": "2026-11-08"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "registers.4.as_at",
+  "value": "2026-10-16"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "registers.2.as_at",
+  "value": "2026-10-27"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "registers.1.as_at",
+  "value": "2026-09-02"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "registers.5.as_at",
+  "value": "2026-09-08"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "registers.0.as_at",
+  "value": "2026-09-02"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "registers.3.as_at",
+  "value": "2026-10-14"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "managers.AIFM.as_at",
+  "value": "2026-10-13"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "managers.UCITS_MANCO.as_at",
+  "value": "2026-10-13"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "gleif.golden_copy_file",
+  "value": "20261108-0800-gleif-goldencopy-lei2-golden-copy.csv.zip"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "gleif.rr_file",
+  "value": "20261108-0800-gleif-goldencopy-rr-golden-copy.csv.zip"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "gleif.level1_rows_scanned",
+  "value": "3,488,216"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "gleif.rr_rows_scanned",
+  "value": "492,776"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "gleif.ie_fund_leis",
+  "value": "14,637"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "gleif.ie_other_entities",
+  "value": "24,228"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "gleif.fund_relationships",
+  "value": "20,290"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "gleif.counterparties",
+  "value": "492"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "pdf_pages_without_header",
+  "value": "5"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "control_totals_exact",
+  "value": "11"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "control_totals_checked",
+  "value": "12"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "table.reconciliation",
+  "value": "table"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "dq_findings.Q01.desc",
+  "value": "Fund name missing in source row"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "dq_findings.Q01.n",
+  "value": "5"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "dq_findings.W01.desc",
+  "value": "Duplicate fund name within the same umbrella"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "dq_findings.W01.n",
+  "value": "1"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "dq_findings.W02.desc",
+  "value": "Sub-fund authorised before its umbrella"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "dq_findings.W02.n",
+  "value": "9"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "dq_findings.W03.desc",
+  "value": "No management company / AIFM printed and not internally managed"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "dq_findings.W03.n",
+  "value": "25"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "dq_findings.W10.desc",
+  "value": "LEI present in more than one extract pool (deduplicated)"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "dq_findings.W10.n",
+  "value": "129"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "gleif.quarantined",
+  "value": "0"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "match.methods.EXACT_NAME",
+  "value": "1,434"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "match.methods.EXACT_IN_UMBRELLA",
+  "value": "7,968"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "match.methods.EXACT_UNIQUE_SUBFUND",
+  "value": "524"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "match.methods.FUZZY_IN_UMBRELLA",
+  "value": "26"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "match.methods.FUZZY_GLOBAL",
+  "value": "4"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "thresholds.fuzzy_accept",
+  "value": "92"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "thresholds.fuzzy_review",
+  "value": "85"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "match.lei_clashes_resolved",
+  "value": "11"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "match.guard_rejects.DISTINGUISHING_TOKENS",
+  "value": "534"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "match.guard_rejects.LEGAL_FORM_CONFLICT",
+  "value": "64"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "review.seed",
+  "value": "20261109"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "review.sample_rows_still_matching_current_run",
+  "value": "113"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "table.review",
+  "value": "table"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "review.FUZZY_REVIEW_BAND.precision_strict_pct",
+  "value": "17.4%"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "thresholds.renewal_warning_days",
+  "value": "60"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "thresholds.manager_match",
+  "value": "85"
+ },
+ {
+  "doc": "docs/methodology.md",
+  "key": "market.managers_mapped_to_register_pct",
+  "value": "66.6%"
+ },
+ {
+  "doc": "docs/primer.md",
+  "key": "as_of",
+  "value": "2026-11-08"
+ },
+ {
+  "doc": "docs/primer.md",
+  "key": "market.aif_qiaif_flag_pct",
+  "value": "93.5%"
+ },
+ {
+  "doc": "docs/primer.md",
+  "key": "market.umbrella_share_of_top_level_pct",
+  "value": "82.5%"
+ },
+ {
+  "doc": "docs/primer.md",
+  "key": "market.sub_fund_share_pct",
+  "value": "97.3%"
+ },
+ {
+  "doc": "docs/primer.md",
+  "key": "market.subfunds_per_umbrella_max",
+  "value": "229"
+ },
+ {
+  "doc": "docs/limitations.md",
+  "key": "registers.0.as_at",
+  "value": "2026-09-02"
+ },
+ {
+  "doc": "docs/limitations.md",
+  "key": "registers.2.as_at",
+  "value": "2026-10-27"
+ },
+ {
+  "doc": "docs/limitations.md",
+  "key": "as_of",
+  "value": "2026-11-08"
+ },
+ {
+  "doc": "docs/limitations.md",
+  "key": "review.FUZZY_ACCEPTED.precision_strict_pct",
+  "value": "86.7%"
+ },
+ {
+  "doc": "docs/limitations.md",
+  "key": "review.FUZZY_ACCEPTED.n",
+  "value": "30"
+ },
+ {
+  "doc": "docs/limitations.md",
+  "key": "review.EXACT_ALL.correct",
+  "value": "60"
+ },
+ {
+  "doc": "docs/limitations.md",
+  "key": "review.EXACT_ALL.n",
+  "value": "60"
+ },
+ {
+  "doc": "docs/limitations.md",
+  "key": "review.EXACT_ALL.error_rate_95_upper_pct",
+  "value": "5.0%"
+ },
+ {
+  "doc": "docs/limitations.md",
+  "key": "match.unmatched",
+  "value": "1,211"
+ },
+ {
+  "doc": "docs/limitations.md",
+  "key": "control_totals_exact",
+  "value": "11"
+ },
+ {
+  "doc": "docs/limitations.md",
+  "key": "control_totals_checked",
+  "value": "12"
+ },
+ {
+  "doc": "docs/limitations.md",
+  "key": "control_total_abs_variance",
+  "value": "1"
+ },
+ {
+  "doc": "docs/powerbi_build_guide.md",
+  "key": "match.funds",
+  "value": "11,190"
+ },
+ {
+  "doc": "docs/powerbi_build_guide.md",
+  "key": "exceptions.total",
+  "value": "6,312"
+ },
+ {
+  "doc": "docs/powerbi_build_guide.md",
+  "key": "match.accepted_pct",
+  "value": "89.0%"
+ },
+ {
+  "doc": "docs/powerbi_build_guide.md",
+  "key": "exceptions.by_rule.E01.n",
+  "value": "845"
+ },
+ {
+  "doc": "docs/powerbi_build_guide.md",
+  "key": "match.funds",
+  "value": "11,190"
+ },
+ {
+  "doc": "docs/powerbi_build_guide.md",
+  "key": "match.accepted",
+  "value": "9,956"
+ },
+ {
+  "doc": "docs/powerbi_build_guide.md",
+  "key": "exceptions.total",
+  "value": "6,312"
+ },
+ {
+  "doc": "docs/powerbi_build_guide.md",
+  "key": "exceptions.by_severity.HIGH",
+  "value": "109"
+ }
+]

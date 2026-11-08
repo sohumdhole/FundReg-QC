@@ -1,0 +1,12 @@
+# SYNTHETIC TEST FIXTURE: invented fund names used only to test normalisation rules. Not real data.
+input,expected_core
+Example Global Funds plc,EXAMPLE GLOBAL FUNDS
+EXAMPLE GLOBAL FUNDS PUBLIC LIMITED COMPANY,EXAMPLE GLOBAL FUNDS
+The Sample Equity ICAV,SAMPLE EQUITY
+Sample Multi-Asset Fund – EUR,SAMPLE MULTI ASSET FUND EUR
+Demo Credit & Income Fund DAC,DEMO CREDIT AND INCOME FUND
+Demo (Irl) Liquidity Fund,DEMO IRL LIQUIDITY FUND
+Placeholder Partners Fund II ILP,PLACEHOLDER PARTNERS FUND II
+Test Pension Common Contractual Fund,TEST PENSION
+Mock Property Unit Trust,MOCK PROPERTY
+Invented Fonds Société Générale Équité Limited,INVENTED FONDS SOCIETE GENERALE EQUITE

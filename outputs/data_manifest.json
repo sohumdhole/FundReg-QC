@@ -1,0 +1,157 @@
+{
+  "generated_by": "fundreg_qc.data_layer",
+  "filter_rules": {
+    "irish": "Entity.LegalJurisdiction == 'IE' or startswith 'IE-' or Entity.LegalAddress.Country == 'IE'",
+    "fund": "Entity.EntityCategory == 'FUND'",
+    "rr": "StartNode or EndNode is an Irish FUND LEI",
+    "counterparties": "Level 1 records of non-Irish-fund LEIs appearing in kept RR rows"
+  },
+  "gleif_level1_rows_scanned": 3488216,
+  "gleif_rr_rows_scanned": 492776,
+  "files": [
+    {
+      "source": "Central Bank of Ireland register",
+      "register": "UCITS",
+      "file": "cbi_register_ucits.pdf",
+      "url": "https://registers.centralbank.ie/downloadspage.aspx",
+      "edition_as_at": "2026-10-16",
+      "pages": 128,
+      "bytes": 675786,
+      "sha256": "01e69dd74004316c29122c7d9b0694e8b279344fb9a68e0728ccc83c792a0614",
+      "format": "PDF (text layer, no OCR needed)"
+    },
+    {
+      "source": "Central Bank of Ireland register",
+      "register": "ICAV",
+      "file": "cbi_register_icav.pdf",
+      "url": "https://registers.centralbank.ie/downloadspage.aspx",
+      "edition_as_at": "2026-10-27",
+      "pages": 67,
+      "bytes": 692049,
+      "sha256": "704bcfb6cd71cf95de679218f61c2a6fcbf130517e2424379e592f76b2cea07a",
+      "format": "PDF (text layer, no OCR needed)"
+    },
+    {
+      "source": "Central Bank of Ireland register",
+      "register": "DIC",
+      "file": "cbi_register_dic.pdf",
+      "url": "https://registers.centralbank.ie/downloadspage.aspx",
+      "edition_as_at": "2026-09-02",
+      "pages": 23,
+      "bytes": 329739,
+      "sha256": "cf5113e3ab4c65bd2fd67297d297e2a73ca471612d8891b5340c91eeb85994f7",
+      "format": "PDF (text layer, no OCR needed)"
+    },
+    {
+      "source": "Central Bank of Ireland register",
+      "register": "UNIT_TRUST",
+      "file": "cbi_register_unit_trust.pdf",
+      "url": "https://registers.centralbank.ie/downloadspage.aspx",
+      "edition_as_at": "2026-09-08",
+      "pages": 14,
+      "bytes": 273415,
+      "sha256": "2f5efc9a6f7244a057544750b7c542680554bf78f54f9b0feb501fc2d14122dc",
+      "format": "PDF (text layer, no OCR needed)"
+    },
+    {
+      "source": "Central Bank of Ireland register",
+      "register": "CCF",
+      "file": "cbi_register_ccf.pdf",
+      "url": "https://registers.centralbank.ie/downloadspage.aspx",
+      "edition_as_at": "2026-09-02",
+      "pages": 3,
+      "bytes": 211925,
+      "sha256": "0445fbbd0ac09ebc2dd90e3268854bf404facc4f8516acf5db4657b882649686",
+      "format": "PDF (text layer, no OCR needed)"
+    },
+    {
+      "source": "Central Bank of Ireland register",
+      "register": "ILP",
+      "file": "cbi_register_ilp.pdf",
+      "url": "https://registers.centralbank.ie/downloadspage.aspx",
+      "edition_as_at": "2026-10-14",
+      "pages": 8,
+      "bytes": 215533,
+      "sha256": "cfab4a03c904a27335ef07d069faf3d7d7554705d80cf93ccb9c2340915c0f98",
+      "format": "PDF (text layer, no OCR needed)"
+    },
+    {
+      "source": "Central Bank of Ireland register",
+      "register": "AIFM",
+      "file": "cbi_register_aifm.pdf",
+      "url": "https://registers.centralbank.ie/downloadspage.aspx",
+      "edition_as_at": "2026-10-13",
+      "pages": 45,
+      "bytes": 169353,
+      "sha256": "3912b881846eaf01d3c455667a163e844072eeddafb34997cbcb75b8fca2127f",
+      "format": "PDF (text layer, no OCR needed)"
+    },
+    {
+      "source": "Central Bank of Ireland register",
+      "register": "UCITS_MANCO",
+      "file": "cbi_register_ucits_mancos.pdf",
+      "url": "https://registers.centralbank.ie/downloadspage.aspx",
+      "edition_as_at": "2026-10-13",
+      "pages": 8,
+      "bytes": 92484,
+      "sha256": "0c3f3476dbc533e7909702bbfada236b68b59c4a26bbcdadbaf06239fd3ad135",
+      "format": "PDF (text layer, no OCR needed)"
+    },
+    {
+      "source": "GLEIF Golden Copy (downloaded and filtered locally)",
+      "register": "lei2",
+      "file": "20261108-0800-gleif-goldencopy-lei2-golden-copy.csv.zip",
+      "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2026/11/08/1298492/20261108-0800-gleif-goldencopy-lei2-golden-copy.csv.zip",
+      "edition_as_at": "20261108-0800",
+      "bytes": 508449143,
+      "sha256": "06ff89c6fc75ac95862daa5f8e4b0537844a2f79401ca0a9f6f01426c12fb5c0",
+      "licence": "GLEIF LEI data, CC0 1.0 (https://www.gleif.org/en/meta/lei-data-terms-of-use)"
+    },
+    {
+      "source": "GLEIF Golden Copy (downloaded and filtered locally)",
+      "register": "rr",
+      "file": "20261108-0800-gleif-goldencopy-rr-golden-copy.csv.zip",
+      "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2026/11/08/1298540/20261108-0800-gleif-goldencopy-rr-golden-copy.csv.zip",
+      "edition_as_at": "20261108-0800",
+      "bytes": 24489649,
+      "sha256": "078c63534da5740d8ac9be4670b68da34119cee644257273c60b9ada7893c711",
+      "licence": "GLEIF LEI data, CC0 1.0 (https://www.gleif.org/en/meta/lei-data-terms-of-use)"
+    },
+    {
+      "source": "GLEIF filtered extract",
+      "register": "ie_funds_l1",
+      "file": "ie_funds_l1.csv",
+      "rows": 14637,
+      "bytes": 4239597,
+      "sha256": "d65a71dce7e872c28acb7f618e0633de2a715bf9323968c38cae392d3e1f2278",
+      "sha256_matches_filter_manifest": true
+    },
+    {
+      "source": "GLEIF filtered extract",
+      "register": "ie_other_l1_slim",
+      "file": "ie_other_l1_slim.csv",
+      "rows": 24228,
+      "bytes": 2774256,
+      "sha256": "10b906842038cda70e9364e73cf061749f53a1ec0d3d493974f8ee8838a9ef45",
+      "sha256_matches_filter_manifest": true
+    },
+    {
+      "source": "GLEIF filtered extract",
+      "register": "ie_fund_rr",
+      "file": "ie_fund_rr.csv",
+      "rows": 20290,
+      "bytes": 6596634,
+      "sha256": "7590e282056f994d3ddebf696714eef9820aad1c82b64603150143232498199b",
+      "sha256_matches_filter_manifest": true
+    },
+    {
+      "source": "GLEIF filtered extract",
+      "register": "rr_counterparties_l1",
+      "file": "rr_counterparties_l1.csv",
+      "rows": 492,
+      "bytes": 136134,
+      "sha256": "8c9f0b5b930acb63893f6f7b31a06967742c22669c67407fba2615a8e58f5fe1",
+      "sha256_matches_filter_manifest": true
+    }
+  ]
+}

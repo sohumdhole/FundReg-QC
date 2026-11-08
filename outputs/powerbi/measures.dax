@@ -1,0 +1,21 @@
+-- FundReg-QC DAX measures (create in a 'Measures' table)
+Funds = COUNTROWS ( dim_fund )
+Accepted Matches = SUM ( fact_match[is_accepted] )
+Match Rate = DIVIDE ( [Accepted Matches], [Funds] )
+Open Exceptions = COUNTROWS ( fact_exception )
+High Exceptions = CALCULATE ( [Open Exceptions], dim_rule[severity] = "HIGH" )
+Medium Exceptions = CALCULATE ( [Open Exceptions], dim_rule[severity] = "MEDIUM" )
+Low Exceptions = CALCULATE ( [Open Exceptions], dim_rule[severity] = "LOW" )
+Funds With Exception = DISTINCTCOUNT ( fact_exception[fund_key] )
+Exception Rate = DIVIDE ( [Funds With Exception], [Funds] )
+Lapsed LEIs = CALCULATE ( [Open Exceptions], dim_rule[rule_key] = "E01" )
+Renewals Due 60d = CALCULATE ( [Open Exceptions], dim_rule[rule_key] = "E04" )
+Unmatched Funds = CALCULATE ( COUNTROWS ( fact_match ), fact_match[band] = "UNMATCHED" )
+Portfolios = CALCULATE ( [Funds], dim_fund[structure] IN { "STANDALONE", "SUB_FUND" } )
+Manager Share of Portfolios =
+    DIVIDE ( [Portfolios], CALCULATE ( [Portfolios], ALL ( dim_manager ) ) )
+Sub-funds per Umbrella =
+    DIVIDE ( CALCULATE ( [Funds], dim_fund[structure] = "SUB_FUND" ),
+             CALCULATE ( [Funds], dim_fund[structure] = "UMBRELLA" ) )
+Authorised (by auth_date) =
+    CALCULATE ( [Portfolios], USERELATIONSHIP ( dim_fund[auth_date], dim_date[date_key] ) )

@@ -1,0 +1,55 @@
+# UCITS, AIFs, LEIs and why fund master data quality matters
+
+A short primer for readers new to the fund industry. Facts are sourced; figures come from this project's run as at 2026-11-08.
+
+## Two kinds of Irish fund
+
+The Central Bank of Ireland authorises two main categories of investment fund [1]:
+
+- **UCITS** (Undertakings for Collective Investment in Transferable Securities). These are EU-harmonised funds. Once authorised in one member state, a UCITS can be marketed across the EU, including to retail investors [1].
+- **AIFs** (Alternative Investment Funds). Every other regulated fund falls here. In Ireland an AIF can be set up as an ICAV, an investment company, a unit trust, an investment limited partnership, or another vehicle under the 2005 Act [1]. The CBI register marks an AIF with **#** if it may be sold only to qualifying investors, with a minimum subscription of €100,000 [2]. These funds are commonly called QIAIFs. In this run, 93.5% of AIF portfolios carry that mark.
+
+## Umbrellas and sub-funds
+
+Most Irish funds are **umbrellas**: one legal entity holding several **sub-funds**, each with its own portfolio [2]. Irish UCITS regulations treat each sub-fund of a UCITS as a separate UCITS [3]. The structure shows up clearly in this run:
+- 82.5% of top-level funds are umbrellas;
+- 97.3% of investable portfolios are sub-funds;
+- the largest umbrella has 229 sub-funds.
+
+## Who runs the fund
+
+- **UCITS:** a UCITS appoints a **management company (ManCo)**.
+- **AIF:** an AIF has an **AIFM**, unless it is internally managed.
+- **Both:** day-to-day portfolio management is often delegated to an investment manager.
+
+The CBI publishes separate registers of authorised AIFMs and UCITS ManCos [2].
+
+## The LEI
+
+- **What it is.** A Legal Entity Identifier is a 20-character code (ISO 17442). It identifies one legal entity across markets and regulators.
+- **Where the data lives.** GLEIF publishes the full LEI data set as open data under CC0 [4]. It issues the Golden Copy files three times a day [5].
+- **Two levels of data.** **Level 1** describes who an entity is. **Level 2** describes who owns whom. For funds, Level 2 has three relationship types: fund-management entity, umbrella and sub-fund, and master and feeder [6].
+- **Renewal.** LEI data must be re-validated at least once a year. If renewal is missed, the status becomes **LAPSED**. A lapsed LEI is still valid, but GLEIF notes that regulators increasingly check that reported LEIs have been renewed [7].
+
+## Why master data quality matters
+
+- **No LEI, no trade.** Under MiFIR transaction reporting, an investment firm cannot execute a trade for a client that is eligible for an LEI but does not have one [8]. A fund without an LEI (exception E14 here) can therefore be blocked from trading.
+- **Renewal.** ESMA guidance, as quoted by the FCA, says firms are not required to check that a client's LEI has been renewed [8]. Lapsed records (E01) are still a data-quality signal that counterparties and GLEIF track [7].
+- **Identity.** A retired or duplicate LEI used for an authorised fund (E02, E13) means a report points at the wrong record.
+- **Structure and manager.** Wrong umbrella or manager links (E10, E11) send aggregation and oversight to the wrong entity.
+- **Practical impact.** Fund data operations teams register funds across jurisdictions and feed regulatory reports. Consistent identifiers, names, structures and managers are what make those reports correct.
+
+## What this project does not cover
+
+This project covers master data only. It does not check the content of PRIIPs KIDs, SFDR disclosures or EET data files.
+
+## Sources
+
+1. Central Bank of Ireland, *Investment Funds* (fund categories, legal structures). https://www.centralbank.ie/regulation/industry-market-sectors/funds
+2. Central Bank of Ireland, *Registers: downloads* (fund, AIFM and UCITS ManCo registers, with the symbol key printed on each fund register). https://registers.centralbank.ie/downloadspage.aspx
+3. S.I. No. 352 of 2011, European Communities (UCITS) Regulations 2011, Regulation 67. https://www.irishstatutebook.ie/eli/2011/si/352
+4. GLEIF, *LEI Data Terms of Use* (CC0). https://www.gleif.org/en/meta/lei-data-terms-of-use
+5. GLEIF, *GLEIF Golden Copy and Delta Files*. https://www.gleif.org/en/lei-data/gleif-golden-copy
+6. GLEIF, *ROC Policy on Level 2 Data* (fund relationships). https://gleif.org/en/lei-data/access-and-use-lei-data/level-2-data-who-owns-whom/roc-policy-on-level-2-data
+7. GLEIF blog, *Data quality and risk management: the importance of timely renewal of LEIs*. https://www.gleif.org/newsroom/blog/data-quality-and-risk-management-the-importance-of-timely-renewal-of-legal-entity-identifiers
+8. Financial Conduct Authority, *Legal Entity Identifier (LEI) update* (UK MiFIR; quotes ESMA guidance on client LEI renewal). https://fca.org.uk/markets/mifid-ii/legal-entity-identifier-lei-update

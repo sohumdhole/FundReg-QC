@@ -1,0 +1,9 @@
+# raw source data is never committed (re-download; see data/manifest.json)
+data/raw/
+*.duckdb
+*.duckdb.wal
+__pycache__/
+.pytest_cache/
+*.pyc
+gleif_raw/
+gleif_out/

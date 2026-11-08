@@ -1,0 +1,9 @@
+[project]
+name = "fundreg-qc"
+version = "1.0.0"
+description = "Irish fund master data quality and reconciliation: CBI registers vs GLEIF LEI data"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,684 @@
+{
+  "as_of": "2026-11-08",
+  "thresholds": {
+    "fuzzy_accept": 92,
+    "fuzzy_review": 85,
+    "manager_match": 85,
+    "renewal_warning_days": 60
+  },
+  "registers": [
+    {
+      "register": "CCF",
+      "label": "AIF: Common Contractual Fund",
+      "as_at": "2026-09-02",
+      "rows_parsed": 126,
+      "printed_top_level": 22,
+      "parsed_top_level": 22,
+      "top_level_variance": 0,
+      "printed_standalone_plus_subfunds": 104,
+      "parsed_standalone_plus_subfunds": 104,
+      "standalone_plus_subfunds_variance": 0
+    },
+    {
+      "register": "DIC",
+      "label": "AIF: Designated Investment Company",
+      "as_at": "2026-09-02",
+      "rows_parsed": 868,
+      "printed_top_level": 172,
+      "parsed_top_level": 172,
+      "top_level_variance": 0,
+      "printed_standalone_plus_subfunds": 762,
+      "parsed_standalone_plus_subfunds": 762,
+      "standalone_plus_subfunds_variance": 0
+    },
+    {
+      "register": "ICAV",
+      "label": "AIF: ICAV",
+      "as_at": "2026-10-27",
+      "rows_parsed": 2578,
+      "printed_top_level": 624,
+      "parsed_top_level": 624,
+      "top_level_variance": 0,
+      "printed_standalone_plus_subfunds": 2056,
+      "parsed_standalone_plus_subfunds": 2056,
+      "standalone_plus_subfunds_variance": 0
+    },
+    {
+      "register": "ILP",
+      "label": "AIF: Investment Limited Partnership",
+      "as_at": "2026-10-14",
+      "rows_parsed": 113,
+      "printed_top_level": 91,
+      "parsed_top_level": 91,
+      "top_level_variance": 0,
+      "printed_standalone_plus_subfunds": 101,
+      "parsed_standalone_plus_subfunds": 101,
+      "standalone_plus_subfunds_variance": 0
+    },
+    {
+      "register": "UCITS",
+      "label": "UCITS (all legal forms)",
+      "as_at": "2026-10-16",
+      "rows_parsed": 6891,
+      "printed_top_level": 557,
+      "parsed_top_level": 557,
+      "top_level_variance": 0,
+      "printed_standalone_plus_subfunds": 6349,
+      "parsed_standalone_plus_subfunds": 6350,
+      "standalone_plus_subfunds_variance": 1
+    },
+    {
+      "register": "UNIT_TRUST",
+      "label": "AIF: Unit Trust",
+      "as_at": "2026-09-08",
+      "rows_parsed": 619,
+      "printed_top_level": 92,
+      "parsed_top_level": 92,
+      "top_level_variance": 0,
+      "printed_standalone_plus_subfunds": 536,
+      "parsed_standalone_plus_subfunds": 536,
+      "standalone_plus_subfunds_variance": 0
+    }
+  ],
+  "cbi_rows_parsed": 11195,
+  "cbi_printed_top_level_total": 1558,
+  "cbi_printed_sf_total": 9908,
+  "control_totals_checked": 12,
+  "control_totals_exact": 11,
+  "control_total_abs_variance": 1,
+  "cbi_quarantined": 5,
+  "cbi_funds_in_scope": 11190,
+  "dq_findings": {
+    "Q01": {
+      "action": "QUARANTINE",
+      "desc": "Fund name missing in source row",
+      "n": 5
+    },
+    "W01": {
+      "action": "FLAG",
+      "desc": "Duplicate fund name within the same umbrella",
+      "n": 1
+    },
+    "W02": {
+      "action": "FLAG",
+      "desc": "Sub-fund authorised before its umbrella",
+      "n": 9
+    },
+    "W03": {
+      "action": "FLAG",
+      "desc": "No management company / AIFM printed and not internally managed",
+      "n": 25
+    },
+    "W10": {
+      "action": "FLAG",
+      "desc": "LEI present in more than one extract pool (deduplicated)",
+      "n": 129
+    }
+  },
+  "managers": {
+    "AIFM": {
+      "printed": 192,
+      "parsed": 192,
+      "as_at": "2026-10-13"
+    },
+    "UCITS_MANCO": {
+      "printed": 84,
+      "parsed": 84,
+      "as_at": "2026-10-13"
+    }
+  },
+  "pdf_pages_without_header": 5,
+  "gleif": {
+    "golden_copy_file": "20261108-0800-gleif-goldencopy-lei2-golden-copy.csv.zip",
+    "rr_file": "20261108-0800-gleif-goldencopy-rr-golden-copy.csv.zip",
+    "level1_rows_scanned": 3488216,
+    "rr_rows_scanned": 492776,
+    "ie_fund_leis": 14637,
+    "ie_other_entities": 24228,
+    "fund_relationships": 20290,
+    "counterparties": 492,
+    "ie_fund_status": {
+      "ISSUED": 9717,
+      "LAPSED": 3581,
+      "RETIRED": 1154,
+      "ANNULLED": 84,
+      "DUPLICATE": 54,
+      "PENDING_TRANSFER": 32,
+      "PENDING_ARCHIVAL": 15
+    },
+    "relationship_types": {
+      "IS_FUND-MANAGED_BY": 9989,
+      "IS_SUBFUND_OF": 9458,
+      "IS_ULTIMATELY_CONSOLIDATED_BY": 382,
+      "IS_DIRECTLY_CONSOLIDATED_BY": 377,
+      "IS_FEEDER_TO": 84
+    },
+    "quarantined": 0
+  },
+  "match": {
+    "funds": 11190,
+    "accepted": 9956,
+    "probable": 23,
+    "unmatched": 1211,
+    "accepted_pct": 89.0,
+    "methods": {
+      "EXACT_IN_UMBRELLA": 7968,
+      "EXACT_NAME": 1434,
+      "EXACT_UNIQUE_SUBFUND": 524,
+      "FUZZY_IN_UMBRELLA": 26,
+      "FUZZY_GLOBAL": 4
+    },
+    "lei_clashes_resolved": 11,
+    "guard_rejects": {
+      "LEGAL_FORM_CONFLICT": 64,
+      "DISTINGUISHING_TOKENS": 534
+    },
+    "fuzzy_accepted": 30,
+    "exact_accepted": 9926,
+    "unmatched_subfunds": 967,
+    "unmatched_subfunds_with_matched_umbrella": 692,
+    "unmatched_subfunds_with_matched_umbrella_pct": 57.1
+  },
+  "match_by_register_structure": [
+    {
+      "register": "CCF",
+      "structure": "SUB_FUND",
+      "funds": 104,
+      "accepted": 98,
+      "probable": 1,
+      "unmatched": 5,
+      "accepted_pct": 94.2
+    },
+    {
+      "register": "CCF",
+      "structure": "UMBRELLA",
+      "funds": 22,
+      "accepted": 17,
+      "probable": 0,
+      "unmatched": 5,
+      "accepted_pct": 77.3
+    },
+    {
+      "register": "DIC",
+      "structure": "STANDALONE",
+      "funds": 66,
+      "accepted": 62,
+      "probable": 0,
+      "unmatched": 4,
+      "accepted_pct": 93.9
+    },
+    {
+      "register": "DIC",
+      "structure": "SUB_FUND",
+      "funds": 696,
+      "accepted": 612,
+      "probable": 1,
+      "unmatched": 83,
+      "accepted_pct": 87.9
+    },
+    {
+      "register": "DIC",
+      "structure": "UMBRELLA",
+      "funds": 106,
+      "accepted": 80,
+      "probable": 1,
+      "unmatched": 25,
+      "accepted_pct": 75.5
+    },
+    {
+      "register": "ICAV",
+      "structure": "STANDALONE",
+      "funds": 102,
+      "accepted": 71,
+      "probable": 0,
+      "unmatched": 31,
+      "accepted_pct": 69.6
+    },
+    {
+      "register": "ICAV",
+      "structure": "SUB_FUND",
+      "funds": 1949,
+      "accepted": 1448,
+      "probable": 1,
+      "unmatched": 500,
+      "accepted_pct": 74.3
+    },
+    {
+      "register": "ICAV",
+      "structure": "UMBRELLA",
+      "funds": 522,
+      "accepted": 405,
+      "probable": 0,
+      "unmatched": 117,
+      "accepted_pct": 77.6
+    },
+    {
+      "register": "ILP",
+      "structure": "STANDALONE",
+      "funds": 79,
+      "accepted": 53,
+      "probable": 0,
+      "unmatched": 26,
+      "accepted_pct": 67.1
+    },
+    {
+      "register": "ILP",
+      "structure": "SUB_FUND",
+      "funds": 22,
+      "accepted": 11,
+      "probable": 0,
+      "unmatched": 11,
+      "accepted_pct": 50.0
+    },
+    {
+      "register": "ILP",
+      "structure": "UMBRELLA",
+      "funds": 12,
+      "accepted": 6,
+      "probable": 1,
+      "unmatched": 5,
+      "accepted_pct": 50.0
+    },
+    {
+      "register": "UCITS",
+      "structure": "STANDALONE",
+      "funds": 16,
+      "accepted": 15,
+      "probable": 0,
+      "unmatched": 1,
+      "accepted_pct": 93.8
+    },
+    {
+      "register": "UCITS",
+      "structure": "SUB_FUND",
+      "funds": 6334,
+      "accepted": 6007,
+      "probable": 15,
+      "unmatched": 312,
+      "accepted_pct": 94.8
+    },
+    {
+      "register": "UCITS",
+      "structure": "UMBRELLA",
+      "funds": 541,
+      "accepted": 524,
+      "probable": 1,
+      "unmatched": 16,
+      "accepted_pct": 96.9
+    },
+    {
+      "register": "UNIT_TRUST",
+      "structure": "STANDALONE",
+      "funds": 9,
+      "accepted": 6,
+      "probable": 0,
+      "unmatched": 3,
+      "accepted_pct": 66.7
+    },
+    {
+      "register": "UNIT_TRUST",
+      "structure": "SUB_FUND",
+      "funds": 527,
+      "accepted": 470,
+      "probable": 1,
+      "unmatched": 56,
+      "accepted_pct": 89.2
+    },
+    {
+      "register": "UNIT_TRUST",
+      "structure": "UMBRELLA",
+      "funds": 83,
+      "accepted": 71,
+      "probable": 1,
+      "unmatched": 11,
+      "accepted_pct": 85.5
+    }
+  ],
+  "match_by_register": [
+    {
+      "register": "CCF",
+      "label": "AIF: Common Contractual Fund",
+      "funds": 126,
+      "accepted": 115,
+      "accepted_pct": 91.3
+    },
+    {
+      "register": "DIC",
+      "label": "AIF: Designated Investment Company",
+      "funds": 868,
+      "accepted": 754,
+      "accepted_pct": 86.9
+    },
+    {
+      "register": "ICAV",
+      "label": "AIF: ICAV",
+      "funds": 2573,
+      "accepted": 1924,
+      "accepted_pct": 74.8
+    },
+    {
+      "register": "ILP",
+      "label": "AIF: Investment Limited Partnership",
+      "funds": 113,
+      "accepted": 70,
+      "accepted_pct": 61.9
+    },
+    {
+      "register": "UCITS",
+      "label": "UCITS (all legal forms)",
+      "funds": 6891,
+      "accepted": 6546,
+      "accepted_pct": 95.0
+    },
+    {
+      "register": "UNIT_TRUST",
+      "label": "AIF: Unit Trust",
+      "funds": 619,
+      "accepted": 547,
+      "accepted_pct": 88.4
+    }
+  ],
+  "match_by_structure": {
+    "SUB_FUND": {
+      "funds": 9632,
+      "accepted": 8646,
+      "accepted_pct": 89.8
+    },
+    "UMBRELLA": {
+      "funds": 1286,
+      "accepted": 1103,
+      "accepted_pct": 85.8
+    },
+    "STANDALONE": {
+      "funds": 272,
+      "accepted": 207,
+      "accepted_pct": 76.1
+    }
+  },
+  "match_by_regime": {
+    "AIF": {
+      "funds": 4299,
+      "accepted": 3410,
+      "accepted_pct": 79.3
+    },
+    "UCITS": {
+      "funds": 6891,
+      "accepted": 6546,
+      "accepted_pct": 95.0
+    }
+  },
+  "review": {
+    "EXACT_IN_UMBRELLA": {
+      "n": 20,
+      "correct": 20,
+      "incorrect": 0,
+      "uncertain": 0,
+      "precision_strict_pct": 100.0,
+      "precision_lenient_pct": 100.0
+    },
+    "EXACT_NAME": {
+      "n": 20,
+      "correct": 20,
+      "incorrect": 0,
+      "uncertain": 0,
+      "precision_strict_pct": 100.0,
+      "precision_lenient_pct": 100.0
+    },
+    "EXACT_UNIQUE_SUBFUND": {
+      "n": 20,
+      "correct": 20,
+      "incorrect": 0,
+      "uncertain": 0,
+      "precision_strict_pct": 100.0,
+      "precision_lenient_pct": 100.0
+    },
+    "FUZZY_ACCEPTED": {
+      "n": 30,
+      "correct": 26,
+      "incorrect": 1,
+      "uncertain": 3,
+      "precision_strict_pct": 86.7,
+      "precision_lenient_pct": 96.7
+    },
+    "FUZZY_REVIEW_BAND": {
+      "n": 23,
+      "correct": 4,
+      "incorrect": 12,
+      "uncertain": 7,
+      "precision_strict_pct": 17.4,
+      "precision_lenient_pct": 47.8
+    },
+    "EXACT_ALL": {
+      "n": 60,
+      "correct": 60,
+      "precision_strict_pct": 100.0,
+      "error_rate_95_upper_pct": 5.0
+    },
+    "sample_rows": 113,
+    "sample_rows_still_matching_current_run": 113,
+    "seed": 20261109
+  },
+  "matched_lei_status": {
+    "ISSUED": 8959,
+    "LAPSED": 845,
+    "RETIRED": 101,
+    "PENDING_TRANSFER": 28,
+    "PENDING_ARCHIVAL": 15,
+    "ANNULLED": 5,
+    "DUPLICATE": 3
+  },
+  "exceptions": {
+    "total": 6312,
+    "funds_with_exception": 4719,
+    "by_severity": {
+      "HIGH": 109,
+      "LOW": 3715,
+      "MEDIUM": 2488
+    },
+    "by_owner": {
+      "Static Data and Relationships": 2388,
+      "LEI Operations": 1956,
+      "Fund Registration": 1944,
+      "Data Governance": 24
+    },
+    "by_rule": {
+      "E01": {
+        "name": "LEI lapsed",
+        "severity": "MEDIUM",
+        "owner": "LEI Operations",
+        "n": 845
+      },
+      "E02": {
+        "name": "LEI retired, annulled or duplicate while fund is authorised",
+        "severity": "HIGH",
+        "owner": "Fund Registration",
+        "n": 109
+      },
+      "E03": {
+        "name": "Renewal date passed but status still ISSUED",
+        "severity": "MEDIUM",
+        "owner": "LEI Operations",
+        "n": 0
+      },
+      "E04": {
+        "name": "Renewal due within 60 days",
+        "severity": "LOW",
+        "owner": "LEI Operations",
+        "n": 1111
+      },
+      "E05": {
+        "name": "GLEIF entity status INACTIVE while fund is authorised",
+        "severity": "HIGH",
+        "owner": "Fund Registration",
+        "n": 0
+      },
+      "E06": {
+        "name": "Legal jurisdiction is not Ireland",
+        "severity": "MEDIUM",
+        "owner": "Fund Registration",
+        "n": 2
+      },
+      "E07": {
+        "name": "Matched LEI not categorised as FUND",
+        "severity": "LOW",
+        "owner": "Static Data and Relationships",
+        "n": 126
+      },
+      "E08": {
+        "name": "No fund-manager relationship in GLEIF",
+        "severity": "LOW",
+        "owner": "Static Data and Relationships",
+        "n": 1234
+      },
+      "E09": {
+        "name": "Sub-fund without an umbrella relationship in GLEIF",
+        "severity": "LOW",
+        "owner": "Static Data and Relationships",
+        "n": 356
+      },
+      "E10": {
+        "name": "Umbrella in GLEIF differs from CBI umbrella",
+        "severity": "MEDIUM",
+        "owner": "Static Data and Relationships",
+        "n": 5
+      },
+      "E11": {
+        "name": "Fund manager in GLEIF differs from CBI ManCo / AIFM",
+        "severity": "MEDIUM",
+        "owner": "Static Data and Relationships",
+        "n": 407
+      },
+      "E12": {
+        "name": "Fund name differs between CBI and GLEIF",
+        "severity": "LOW",
+        "owner": "Static Data and Relationships",
+        "n": 42
+      },
+      "E13": {
+        "name": "Possible duplicate LEIs for one fund",
+        "severity": "MEDIUM",
+        "owner": "Data Governance",
+        "n": 18
+      },
+      "E14": {
+        "name": "No LEI found for an authorised fund",
+        "severity": "MEDIUM",
+        "owner": "Fund Registration",
+        "n": 1211
+      },
+      "E15": {
+        "name": "Probable match awaiting review",
+        "severity": "LOW",
+        "owner": "Static Data and Relationships",
+        "n": 23
+      },
+      "E16": {
+        "name": "Issued Irish fund LEI not found on any CBI register",
+        "severity": "LOW",
+        "owner": "Fund Registration",
+        "n": 622
+      },
+      "E17": {
+        "name": "Source record quarantined or flagged by data-quality rules",
+        "severity": "LOW",
+        "owner": "Data Governance",
+        "n": 6
+      },
+      "E18": {
+        "name": "Manager name differs but brand matches (rename or translation)",
+        "severity": "LOW",
+        "owner": "Static Data and Relationships",
+        "n": 195
+      }
+    },
+    "matched_issued_pct": 90.0,
+    "matched_lapsed_pct": 8.5
+  },
+  "manager_check": {
+    "pairs_checked": 8466,
+    "below_threshold": 602,
+    "agree_pct": 92.9
+  },
+  "relationships": {
+    "live_matched_funds": 9721,
+    "with_manager_rel": 8487,
+    "with_manager_rel_pct": 87.3
+  },
+  "market": {
+    "umbrellas": 1286,
+    "standalone": 272,
+    "sub_funds": 9632,
+    "portfolios": 9904,
+    "ucits_portfolios": 6350,
+    "aif_portfolios": 3554,
+    "ucits_portfolio_pct": 64.1,
+    "ucits_top_level": 557,
+    "aif_top_level": 1001,
+    "sub_fund_share_pct": 97.3,
+    "umbrella_share_of_top_level_pct": 82.5,
+    "subfunds_per_umbrella_median": 2.0,
+    "subfunds_per_umbrella_mean": 7.5,
+    "subfunds_per_umbrella_max": 229,
+    "largest_umbrella": "FAM Series UCITS ICAV",
+    "aif_qiaif_flag_pct": 93.5,
+    "ucits_managers": 120,
+    "ucits_top5_share_pct": 37.2,
+    "ucits_top10_share_pct": 50.1,
+    "ucits_hhi": 385,
+    "ucits_top_manager": "BlackRock Asset Management Ireland Limited",
+    "ucits_top_manager_share_pct": 9.8,
+    "aif_managers": 242,
+    "aif_top5_share_pct": 35.4,
+    "aif_top10_share_pct": 50.5,
+    "aif_hhi": 371,
+    "aif_top_manager": "Carne Global Fund Managers (Ireland) Limited",
+    "aif_top_manager_share_pct": 11.6,
+    "internally_managed_portfolios": 3,
+    "top10_managers": [
+      {
+        "manager": "Carne Global Fund Managers (Ireland) Limited",
+        "portfolios": 962
+      },
+      {
+        "manager": "Waystone Management Company (IE) Limited",
+        "portfolios": 898
+      },
+      {
+        "manager": "BlackRock Asset Management Ireland Limited",
+        "portfolios": 801
+      },
+      {
+        "manager": "Fineco Asset Management dac",
+        "portfolios": 338
+      },
+      {
+        "manager": "Fundrock Management Company (Ireland) Limited",
+        "portfolios": 290
+      },
+      {
+        "manager": "LGIM Managers (Europe) Limited",
+        "portfolios": 283
+      },
+      {
+        "manager": "IQ EQ Fund Management (Ireland) Limited",
+        "portfolios": 266
+      },
+      {
+        "manager": "State Street Global Advisors Europe Limited",
+        "portfolios": 236
+      },
+      {
+        "manager": "Invesco Investment Management Limited",
+        "portfolios": 193
+      },
+      {
+        "manager": "Insight Investment Management (Europe) Limited",
+        "portfolios": 186
+      }
+    ],
+    "portfolios_authorised_since_2020_pct": 49.7,
+    "portfolios_authorised_2026_ytd": 746,
+    "peak_year": 2025,
+    "managers_mapped_to_register_pct": 66.6
+  }
+}
